@@ -1,8 +1,11 @@
 <div class="container text-center">
   <h1>Result</h1>
-  <p><%= @message %></p>
-  <h3>Points for this game: <%= @result %></h3>
-  <h2>Your total score: <%= session[:score] %></h2>
+  <p><%= session[:player_1]%>, <%= @message %></p>
+  <p><%= session[:player_2]%>, <%= @message_2 %></p>
+  <h3>Points for this game for <%= session[:player_1] %>: <%= @result %></h3>
+  <h3>Points for this game for <%= session[:player_2] %>: <%= @result_2 %></h3>
+  <h2><%= session[:player_1]%> total score: <%= session[:score] %></h2>
+  <h2><%= session[:player_2]%> total score: <%= session[:score_2] %></h2>
   <%= link_to "Play again", new_path %>
 </div>
 

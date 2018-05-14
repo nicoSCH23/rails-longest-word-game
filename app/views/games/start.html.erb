@@ -1,0 +1,14 @@
+<h1 class="text-center">New Game</h1>
+<div class="container">
+  <div class="text-center">
+    <h2>PLAYERS</h2>
+    <form action="/new" method="post" class="form-inline">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <div class="form-group mx-sm-3 mb-2">
+        <input type="text" name="player_1" placeholder="Player 1">
+        <input type="text" name="player_2" placeholder="Player 2">
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Play</button>
+    </form>
+  </div>
+</div>
