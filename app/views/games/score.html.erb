@@ -1,0 +1,8 @@
+<div class="container text-center">
+  <h1>Result</h1>
+  <p><%= @message %></p>
+  <h3>Points for this game: <%= @result %></h3>
+  <h2>Your total score: <%= session[:score] %></h2>
+  <%= link_to "Play again", new_path %>
+</div>
+
